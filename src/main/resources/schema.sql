@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(20) NOT NULL,
+    password VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(20) NOT NULL,
+    cost INT NOT NULL,
+    list INT NOT NULL,
+    supplier VARCHAR(20) NOT NULL,
+    manufacturer VARCHAR(20) NOT NULL
+);
